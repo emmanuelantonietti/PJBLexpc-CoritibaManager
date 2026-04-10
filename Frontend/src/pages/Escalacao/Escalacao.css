@@ -1,0 +1,146 @@
+.escalacao-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.coluna-campo {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.escalacao-title {
+  color: #00544d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.campo-futebol {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  background-color: #2e7d32;
+  background-image: 
+    linear-gradient(white 2px, transparent 2px),
+    linear-gradient(90deg, white 2px, transparent 2px);
+  border: 5px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+
+.jogador-marcador {
+  position: absolute;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.jogador-numero {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 3px solid #00544d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #00544d;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.jogador-nome-campo {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  margin-top: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100px;
+}
+
+.legenda {
+  margin-top: 15px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+
+.coluna-reservas {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  max-height: 550px;
+  overflow-y: auto;
+}
+
+.reservas-title {
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.lista-reservas {
+  list-style: none;
+  padding: 0;
+}
+
+.reserva-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.reserva-item:last-child {
+  border-bottom: none;
+}
+
+.reserva-numero {
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.reserva-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.reserva-nome {
+  font-weight: 500;
+  color: #333;
+}
+
+.reserva-posicao {
+  font-size: 0.8rem;
+  color: #777;
+}
